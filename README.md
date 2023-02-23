@@ -11,9 +11,8 @@ function touch {set-content -Path ($args[0]) -Value ($null)}
 
 function mkd
 {
-    mkdir assets,css,scripts,html
+    mkdir assets,css,scripts
     touch index.html
-    mv index.html html/
     touch style.css
     mv style.css css
     touch app.js
