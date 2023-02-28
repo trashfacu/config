@@ -2,7 +2,7 @@
 
 #### Hello and welcome to my dot files.
 
-![welcome]("\assets-ignore\welcome.png")
+![cover](./assets-ignore/welcome.png)
 
 ### Scripts
 
