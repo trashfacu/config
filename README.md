@@ -1,24 +1,24 @@
 # config
 
-#### Scripts
+#### Hello and welcome to my dot files.
 
-**Utility to create basic working directories for a project**
+![welcome]("\assets-ignore\welcome.png")
 
-+ First you need to edit the "$PROFILE" file in the system and add these two functions.
+### Scripts
 
-```ps1
-function touch {set-content -Path ($args[0]) -Value ($null)} 
+The "scripts" folder contains the various scripts to automate certain configurations.
 
-function mkd
-{
-    mkdir assets,css,scripts,html
-    touch index.html
-    mv index.html html/
-    touch style.css
-    mv style.css css
-    touch app.js
-    mv app.js scripts
-}
-```
+- 00: Install apps
+- 01: Config WindowsTerminal to autorecog .PROFILE settings
 
-+ Then you need to reload your terminal or simply type ".$PROFILE" in the console and both "mkd" and "touch" functions would be available
+### Config folder
+
+powershell/ --> all the ps1 files needed
+
+### powershellFunctions
+
+- mkd -> Creates a basic structure for a project (index.html, assets folder, css and js folder with their respectives app.js and app.css)
+
+- cdp -> change directory into your own Projects folder, (you need to include that in the path)
+
+- startProject "yourProject" -> initiates the text editor that you specifies, (vscode, intellij, etc.) and you add your project's name (must be in your projects folder) and starts the text editor/IDE auto.
