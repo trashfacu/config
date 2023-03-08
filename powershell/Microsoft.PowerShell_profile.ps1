@@ -17,13 +17,16 @@ function mkd {
 }
 
 function cdp {
-    cd E:\Facultad\myOwnThings\Proyectos
+    cd E:\Facultad\myOwnThings
 }
 
-function startProyect {
+function startProject {
+    param(
+        [string]$projectName
+    )
+    
     cdp
-    code .\ScalonetaClicker\
-    cd .\ScalonetaClicker\
+    idea64.exe .\$projectName\
+    cd .\$projectName\
 }
-
 
