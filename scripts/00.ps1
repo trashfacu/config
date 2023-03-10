@@ -3,6 +3,7 @@ $Apps = @(
     @{name="AutoHotkey"; id="AutoHotkey.AutoHotkey"},
     @{name="Discord"; id="Discord.Discord"},
     @{name="Steam"; id="Valve.Steam"},
+    @{name="EverNote"; id="evernote.evernote"},   
     @{name="Git"; id="Git.Git"},
     @{name="Google Chrome"; id="Google.Chrome"},
     @{name="IntelliJ IDEA Community"; id="JetBrains.IntelliJIDEA.Community"},
@@ -10,12 +11,9 @@ $Apps = @(
     @{name="Java SDK 19"; id="Oracle.JDK.19"},
     @{name="League of Legends"; id="RiotGames.LeagueOfLegends.LA2"},
     @{name="Lightshot"; id="Skillbrains.Lightshot"},
-    @{name="Microsoft Teams"; id="Microsoft.Teams"},
     @{name="Visual Studio Code"; id="Microsoft.VisualStudioCode"},
-    @{name="Node JS"; id="OpenJS.NodeJS"},
     @{name="Oh my posh"; id="JanDeDobbeleer.OhMyPosh"},
     @{name="Postman"; id="Postman.Postman"},
-    @{name="Python"; id="Python.Python.3.12"},
     @{name="7zip"; id="7zip.7zip"},
     @{name="Zoom"; id="Zoom.Zoom"}
 )
