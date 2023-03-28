@@ -10,7 +10,10 @@ The "scripts" folder contains the various scripts to automate certain configurat
 
 - 00: Install apps
 - 01: Config WindowsTerminal to autorecog .PROFILE settings
-
+- 02: Script for renaming extensions, the syntax is:
+    ```
+        .\02.ps1 -sourceDirectory "C:\directory\where\files\are" -oldExtension "txt" -newExtension "md"     
+    ```
 ### Config folder
 
 powershell/ --> all the ps1 files needed
