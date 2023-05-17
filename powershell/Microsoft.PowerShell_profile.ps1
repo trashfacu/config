@@ -20,6 +20,10 @@ function cdp {
     cd E:\Facultad\myOwnThings
 }
 
+function ctd {
+    cd E:\Facultad\Certified-Tech-Develop
+}
+
 function startProject {
     param(
         [string]$projectName
@@ -30,3 +34,8 @@ function startProject {
     cd .\$projectName\
 }
 
+function winfetch {
+	cd ~\Documents\powershell\Scripts
+	.\winfetch.ps1
+	cd C:\Users\FacuM
+}
