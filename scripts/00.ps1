@@ -3,7 +3,7 @@ $Apps = @(
     @{name="AutoHotkey"; id="AutoHotkey.AutoHotkey"},
     @{name="Discord"; id="Discord.Discord"},
     @{name="Steam"; id="Valve.Steam"},
-    @{name="EverNote"; id="evernote.evernote"},   
+    @{name="Joplin"; id="Joplin.Joplin"},   
     @{name="Git"; id="Git.Git"},
     @{name="Google Chrome"; id="Google.Chrome"},
     @{name="IntelliJ IDEA Community"; id="JetBrains.IntelliJIDEA.Community"},
