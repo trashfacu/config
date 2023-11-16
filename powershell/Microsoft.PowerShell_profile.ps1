@@ -1,7 +1,9 @@
 ##configuracion 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/velvet.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/material.omp.json" | Invoke-Expression
 
 Import-Module -Name Terminal-Icons
+
+echo "Welcome back, Facu"
 
 function touch { set-content -Path ($args[0]) -Value ($null) } 
 
@@ -20,22 +22,10 @@ function cdp {
     cd E:\Facultad\myOwnThings
 }
 
-function ctd {
-    cd E:\Facultad\Certified-Tech-Develop
+function cdj {
+	cd E:\Facultad\Challenges-jobs
 }
 
-function startProject {
-    param(
-        [string]$projectName
-    )
-    
-    cdp
-    idea64.exe .\$projectName\
-    cd .\$projectName\
-}
-
-function winfetch {
-	cd ~\Documents\powershell\Scripts
-	.\winfetch.ps1
-	cd C:\Users\FacuM
+function archive {
+	cd E:\Facundo\trashFacuDB
 }
