@@ -5,17 +5,11 @@ $Apps = @(
     @{name="Steam"; id="Valve.Steam"},
     @{name="Obsidian"; id="Obsidian.Obsidian"},   
     @{name="Git"; id="Git.Git"},
-    @{name="Google Chrome"; id="Google.Chrome"},
-    @{name="IntelliJ IDEA Community"; id="JetBrains.IntelliJIDEA.Community"},
-    @{name="Java"; id="Oracle.JavaRuntimeEnvironment"},
-    @{name="Java SDK 19"; id="Oracle.JDK.19"},
     @{name="League of Legends"; id="RiotGames.LeagueOfLegends.LA2"},
     @{name="Lightshot"; id="Skillbrains.Lightshot"},
     @{name="Visual Studio Code"; id="Microsoft.VisualStudioCode"},
-    @{name="Oh my posh"; id="JanDeDobbeleer.OhMyPosh"},
     @{name="Postman"; id="Postman.Postman"},
-    @{name="7zip"; id="7zip.7zip"},
-    @{name="Zoom"; id="Zoom.Zoom"}
+    @{name="7zip"; id="7zip.7zip"}
 )
 
 # Install each application and show progress
