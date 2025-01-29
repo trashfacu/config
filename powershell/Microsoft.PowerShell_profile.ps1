@@ -9,23 +9,36 @@ function touch { set-content -Path ($args[0]) -Value ($null) }
 
 ##Make Directories MKD
 
-function mkd {
-    mkdir assets, css, scripts
-    touch index.html
-    touch style.css
-    mv style.css css
-    touch app.js
-    mv app.js scripts
-}
-
 function cdp {
     cd E:\Facultad\myOwnThings
 }
 
-function cdj {
-	cd E:\Facultad\Challenges-jobs
+function archive {
+    cd E:\Facundo\trashFacuDB
 }
 
-function archive {
-	cd E:\Facundo\trashFacuDB
+function work {
+    cd D:\Work\PayGoal
+}
+
+function gitcfg {
+    $UserName = "Facundo Mazziotti"
+    $UserEmail = "facundo.mazziotti@paygoal.io"
+
+    if (-not (Test-Path ".git")) {
+        Write-Host "Error: Este directorio no es un repositorio Git." -ForegroundColor Red
+        return
+    }
+
+    try {
+        git config --local user.name $UserName
+        git config --local user.email $UserEmail
+        Write-Host "Configuración de Git actualizada:"
+        Write-Host "  Nombre de usuario: $UserName"
+        Write-Host "  Email: $UserEmail"
+    }
+    catch {
+        Write-Host "Error al configurar Git:" -ForegroundColor Red
+        Write-Host $_.Exception.Message
+    }
 }
