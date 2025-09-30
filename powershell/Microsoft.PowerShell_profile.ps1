@@ -3,7 +3,7 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/material.omp.json" | Invoke
 
 Import-Module -Name Terminal-Icons
 
-echo "Welcome back, Facu"
+fastfetch
 
 function touch { set-content -Path ($args[0]) -Value ($null) } 
 
@@ -19,6 +19,10 @@ function archive {
 
 function work {
     cd D:\Work\PayGoal
+}
+
+function dotfiles {
+    cd E:\Facundo\config
 }
 
 function gitcfg {
